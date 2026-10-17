@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee">
+    <display-name>SafeCall ZK Dashboard</display-name>
+    <welcome-file-list>
+        <welcome-file>index.zul</welcome-file>
+    </welcome-file-list>
+</web-app>

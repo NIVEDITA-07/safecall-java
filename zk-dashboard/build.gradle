@@ -1,0 +1,28 @@
+plugins {
+    id 'war'
+    id 'java'
+    id 'org.gretty' version '3.1.1'
+}
+repositories {
+    mavenCentral()
+    maven { url 'https://mavensync.zkoss.org/maven2' }
+}
+dependencies {
+    implementation 'org.zkoss.zk:zkbind:9.6.0.2'
+    implementation 'org.zkoss.zk:zul:9.6.0.2'
+    implementation 'org.zkoss.zk:zkplus:9.6.0.2'
+    providedCompile 'javax.servlet:javax.servlet-api:3.1.0'
+}
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src/main/java', '../app/src/main/java']
+            exclude 'com/safecall/db/**'
+            exclude 'com/safecall/MainActivity.java'
+            exclude 'com/safecall/CallHistoryActivity.java'
+            exclude 'com/safecall/ContactManagementActivity.java'
+            exclude 'com/safecall/alert/**'
+            exclude 'com/safecall/bridge/**'
+        }
+    }
+}

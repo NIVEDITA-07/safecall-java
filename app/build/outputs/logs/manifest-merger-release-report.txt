@@ -1,0 +1,103 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\safecall-java\app\src\main\AndroidManifest.xml:1:1-37:12
+INJECTED from D:\safecall-java\app\src\main\AndroidManifest.xml:1:1-37:12
+INJECTED from D:\safecall-java\app\src\main\AndroidManifest.xml:1:1-37:12
+INJECTED from D:\safecall-java\app\src\main\AndroidManifest.xml:1:1-37:12
+	package
+		INJECTED from D:\safecall-java\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\safecall-java\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from D:\safecall-java\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\safecall-java\app\src\main\AndroidManifest.xml:1:11-69
+uses-permission#android.permission.SEND_SMS
+ADDED from D:\safecall-java\app\src\main\AndroidManifest.xml:3:5-67
+	android:name
+		ADDED from D:\safecall-java\app\src\main\AndroidManifest.xml:3:22-64
+uses-permission#android.permission.INTERNET
+ADDED from D:\safecall-java\app\src\main\AndroidManifest.xml:4:5-67
+	android:name
+		ADDED from D:\safecall-java\app\src\main\AndroidManifest.xml:4:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\safecall-java\app\src\main\AndroidManifest.xml:5:5-79
+	android:name
+		ADDED from D:\safecall-java\app\src\main\AndroidManifest.xml:5:22-76
+uses-permission#android.permission.POST_NOTIFICATIONS
+ADDED from D:\safecall-java\app\src\main\AndroidManifest.xml:6:5-77
+	android:name
+		ADDED from D:\safecall-java\app\src\main\AndroidManifest.xml:6:22-74
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from D:\safecall-java\app\src\main\AndroidManifest.xml:7:5-75
+	android:name
+		ADDED from D:\safecall-java\app\src\main\AndroidManifest.xml:7:22-72
+uses-permission#android.permission.READ_CALL_LOG
+ADDED from D:\safecall-java\app\src\main\AndroidManifest.xml:8:5-72
+	android:name
+		ADDED from D:\safecall-java\app\src\main\AndroidManifest.xml:8:22-69
+uses-feature#android.hardware.telephony
+ADDED from D:\safecall-java\app\src\main\AndroidManifest.xml:9:5-88
+	android:required
+		ADDED from D:\safecall-java\app\src\main\AndroidManifest.xml:9:61-85
+	android:name
+		ADDED from D:\safecall-java\app\src\main\AndroidManifest.xml:9:19-60
+application
+ADDED from D:\safecall-java\app\src\main\AndroidManifest.xml:11:5-35:19
+INJECTED from D:\safecall-java\app\src\main\AndroidManifest.xml:11:5-35:19
+	android:extractNativeLibs
+		INJECTED from D:\safecall-java\app\src\main\AndroidManifest.xml
+	android:supportsRtl
+		ADDED from D:\safecall-java\app\src\main\AndroidManifest.xml:14:9-35
+	android:label
+		ADDED from D:\safecall-java\app\src\main\AndroidManifest.xml:13:9-36
+	android:allowBackup
+		ADDED from D:\safecall-java\app\src\main\AndroidManifest.xml:12:9-35
+	android:theme
+		ADDED from D:\safecall-java\app\src\main\AndroidManifest.xml:16:9-77
+	android:usesCleartextTraffic
+		ADDED from D:\safecall-java\app\src\main\AndroidManifest.xml:15:9-44
+activity#com.safecall.MainActivity
+ADDED from D:\safecall-java\app\src\main\AndroidManifest.xml:17:9-24:20
+	android:exported
+		ADDED from D:\safecall-java\app\src\main\AndroidManifest.xml:19:13-36
+	android:name
+		ADDED from D:\safecall-java\app\src\main\AndroidManifest.xml:18:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\safecall-java\app\src\main\AndroidManifest.xml:20:13-23:29
+action#android.intent.action.MAIN
+ADDED from D:\safecall-java\app\src\main\AndroidManifest.xml:21:17-69
+	android:name
+		ADDED from D:\safecall-java\app\src\main\AndroidManifest.xml:21:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\safecall-java\app\src\main\AndroidManifest.xml:22:17-77
+	android:name
+		ADDED from D:\safecall-java\app\src\main\AndroidManifest.xml:22:27-74
+activity#com.safecall.CallHistoryActivity
+ADDED from D:\safecall-java\app\src\main\AndroidManifest.xml:25:9-57
+	android:name
+		ADDED from D:\safecall-java\app\src\main\AndroidManifest.xml:25:19-54
+activity#com.safecall.ContactManagementActivity
+ADDED from D:\safecall-java\app\src\main\AndroidManifest.xml:26:9-63
+	android:name
+		ADDED from D:\safecall-java\app\src\main\AndroidManifest.xml:26:19-60
+receiver#com.safecall.receiver.SafeCallPhoneStateReceiver
+ADDED from D:\safecall-java\app\src\main\AndroidManifest.xml:28:9-34:20
+	android:exported
+		ADDED from D:\safecall-java\app\src\main\AndroidManifest.xml:30:13-36
+	android:name
+		ADDED from D:\safecall-java\app\src\main\AndroidManifest.xml:29:13-64
+intent-filter#action:name:android.intent.action.PHONE_STATE
+ADDED from D:\safecall-java\app\src\main\AndroidManifest.xml:31:13-33:29
+action#android.intent.action.PHONE_STATE
+ADDED from D:\safecall-java\app\src\main\AndroidManifest.xml:32:17-76
+	android:name
+		ADDED from D:\safecall-java\app\src\main\AndroidManifest.xml:32:25-73
+uses-sdk
+INJECTED from D:\safecall-java\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\safecall-java\app\src\main\AndroidManifest.xml
+INJECTED from D:\safecall-java\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\safecall-java\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\safecall-java\app\src\main\AndroidManifest.xml

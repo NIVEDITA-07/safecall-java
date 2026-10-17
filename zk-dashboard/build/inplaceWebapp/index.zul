@@ -1,0 +1,58 @@
+<?page title="SafeCall Dashboard"?>
+<window title="SafeCall AI - Call Simulator Dashboard" border="normal" width="700px" 
+        apply="org.zkoss.bind.BindComposer" 
+        viewModel="@id('vm') @init('com.safecall.zk.DashboardViewModel')" 
+        style="margin: 30px auto; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        
+    <vlayout spacing="20px" style="padding: 25px;">
+        <label value="Interactive Call Simulator" style="font-size: 20px; font-weight: bold; color: #333;"/>
+        
+        <grid style="border: 1px solid #ccc;">
+            <columns>
+                <column width="200px" style="font-weight: bold; background: #f9f9f9;"/>
+                <column/>
+            </columns>
+            <rows>
+                <row>
+                    <label value="Caller Name:"/>
+                    <textbox value="@bind(vm.callerName)" width="90%"/>
+                </row>
+                <row>
+                    <label value="Priority Level:"/>
+                    <combobox model="@load(vm.priorities)" selectedItem="@bind(vm.selectedPriority)" width="90%" readonly="true"/>
+                </row>
+                <row>
+                    <label value="Past Recent Calls (Count):"/>
+                    <spinner value="@bind(vm.recentCallCount)" constraint="min 0" width="100px"/>
+                </row>
+                <row>
+                    <label value="Time of Call (Hour 0-23):"/>
+                    <spinner value="@bind(vm.callHour)" constraint="min 0 max 23" width="100px"/>
+                </row>
+            </rows>
+        </grid>
+
+        <button label="Run Scoring Engine" onClick="@command('simulateCall')" 
+                style="font-weight: bold; font-size: 15px; background-color: #007bff; color: white; padding: 12px; border-radius: 5px; cursor: pointer;"/>
+
+        <separator bar="true" style="margin-top: 10px; margin-bottom: 10px;"/>
+        
+        <label value="Engine Output" style="font-size: 18px; font-weight: bold; color: #333;"/>
+        
+        <vbox visible="@load(not empty vm.lastResult)" style="background: #f4f6f8; padding: 15px; border-radius: 5px;">
+            <hbox>
+                <label value="Urgency Score: " style="font-weight: bold; width: 120px;"/>
+                <label value="@load(vm.lastResult.score)" style="font-size: 16px;"/>
+            </hbox>
+            <hbox style="margin-top: 5px;">
+                <label value="Urgency Level: " style="font-weight: bold; width: 120px;"/>
+                <label value="@load(vm.lastResult.urgencyLevel)" style="@load(vm.levelColor)"/>
+            </hbox>
+            <hbox style="margin-top: 5px;">
+                <label value="Rule Log: " style="font-weight: bold; width: 120px;"/>
+                <label value="@load(vm.lastResult.explanation)" multiline="true" style="color: #555;"/>
+            </hbox>
+        </vbox>
+        
+    </vlayout>
+</window>

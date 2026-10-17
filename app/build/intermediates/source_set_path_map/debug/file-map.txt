@@ -1,0 +1,7 @@
+com.safecall.app-pngs-0 D:\safecall-java\app\build\generated\res\pngs\debug
+com.safecall.app-resValues-1 D:\safecall-java\app\build\generated\res\resValues\debug
+com.safecall.app-packageDebugResources-2 D:\safecall-java\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.safecall.app-packageDebugResources-3 D:\safecall-java\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.safecall.app-merged_res-4 D:\safecall-java\app\build\intermediates\merged_res\debug
+com.safecall.app-debug-5 D:\safecall-java\app\src\debug\res
+com.safecall.app-main-6 D:\safecall-java\app\src\main\res

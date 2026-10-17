@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>SafeCall AI — Connected Elderly-Care Platform</title>
+  <meta name="description" content="SafeCall AI prioritizes unexpected communication patterns for elderly people living alone using a 4-factor context-aware urgency engine." />
+  
+  <!-- Healthcare Design Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Local Offline React & ReactDOM (Zero network dependency) -->
+  <script src="react.production.min.js"></script>
+  <script src="react-dom.production.min.js"></script>
+</head>
+<body>
+  <!-- App Mounting Node with initial loading state -->
+  <div id="root">
+    <div style="min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: 'Inter', system-ui, sans-serif; text-align: center; color: #122338; background: #F8FAF9; padding: 24px;">
+      <div style="width: 56px; height: 56px; background: #1B7575; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; font-weight: 800; font-size: 22px; margin-bottom: 16px;">SC</div>
+      <h2 style="font-size: 22px; font-weight: 800; margin-bottom: 8px;">SafeCall AI</h2>
+      <p style="font-size: 14px; color: #4A5B6E; max-width: 320px;">Starting secure connected care components...</p>
+    </div>
+  </div>
+
+  <!-- Pre-transpiled Native JS Bundle (Instant execution, no in-browser Babel overhead) -->
+  <script src="app.bundle.js"></script>
+
+  <!-- Global error catcher to guarantee diagnostic output -->
+  <script>
+    window.addEventListener('error', function(e) {
+      console.error('SafeCall UI Error:', e.message, e.filename, e.lineno);
+      var root = document.getElementById('root');
+      if (root && root.innerHTML.indexOf('Starting secure') !== -1) {
+        root.innerHTML = '<div style="padding: 32px; font-family: sans-serif; color: #A82A1E; background: #FDF2F0; margin: 20px; border-radius: 12px; border: 1px solid #F7C4BC;">' +
+          '<h3 style="margin-bottom: 8px;">Startup Diagnostic</h3>' +
+          '<p style="font-size: 13px; line-height: 1.5;">' + e.message + '</p>' +
+          '<p style="font-size: 11px; color: #738496; margin-top: 8px;">Line ' + e.lineno + ' in ' + e.filename + '</p>' +
+          '</div>';
+      }
+    });
+  </script>
+</body>
+</html>

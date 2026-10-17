@@ -1,0 +1,90 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.safecall"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.SEND_SMS" />
+11-->D:\safecall-java\app\src\main\AndroidManifest.xml:3:5-67
+11-->D:\safecall-java\app\src\main\AndroidManifest.xml:3:22-64
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->D:\safecall-java\app\src\main\AndroidManifest.xml:4:5-67
+12-->D:\safecall-java\app\src\main\AndroidManifest.xml:4:22-64
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->D:\safecall-java\app\src\main\AndroidManifest.xml:5:5-79
+13-->D:\safecall-java\app\src\main\AndroidManifest.xml:5:22-76
+14    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+14-->D:\safecall-java\app\src\main\AndroidManifest.xml:6:5-77
+14-->D:\safecall-java\app\src\main\AndroidManifest.xml:6:22-74
+15    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+15-->D:\safecall-java\app\src\main\AndroidManifest.xml:7:5-75
+15-->D:\safecall-java\app\src\main\AndroidManifest.xml:7:22-72
+16    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+16-->D:\safecall-java\app\src\main\AndroidManifest.xml:8:5-72
+16-->D:\safecall-java\app\src\main\AndroidManifest.xml:8:22-69
+17
+18    <uses-feature
+18-->D:\safecall-java\app\src\main\AndroidManifest.xml:9:5-88
+19        android:name="android.hardware.telephony"
+19-->D:\safecall-java\app\src\main\AndroidManifest.xml:9:19-60
+20        android:required="false" />
+20-->D:\safecall-java\app\src\main\AndroidManifest.xml:9:61-85
+21
+22    <application
+22-->D:\safecall-java\app\src\main\AndroidManifest.xml:11:5-35:19
+23        android:allowBackup="true"
+23-->D:\safecall-java\app\src\main\AndroidManifest.xml:12:9-35
+24        android:debuggable="true"
+25        android:extractNativeLibs="false"
+26        android:label="SafeCall AI"
+26-->D:\safecall-java\app\src\main\AndroidManifest.xml:13:9-36
+27        android:supportsRtl="true"
+27-->D:\safecall-java\app\src\main\AndroidManifest.xml:14:9-35
+28        android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar"
+28-->D:\safecall-java\app\src\main\AndroidManifest.xml:16:9-77
+29        android:usesCleartextTraffic="true" >
+29-->D:\safecall-java\app\src\main\AndroidManifest.xml:15:9-44
+30        <activity
+30-->D:\safecall-java\app\src\main\AndroidManifest.xml:17:9-24:20
+31            android:name="com.safecall.MainActivity"
+31-->D:\safecall-java\app\src\main\AndroidManifest.xml:18:13-41
+32            android:exported="true" >
+32-->D:\safecall-java\app\src\main\AndroidManifest.xml:19:13-36
+33            <intent-filter>
+33-->D:\safecall-java\app\src\main\AndroidManifest.xml:20:13-23:29
+34                <action android:name="android.intent.action.MAIN" />
+34-->D:\safecall-java\app\src\main\AndroidManifest.xml:21:17-69
+34-->D:\safecall-java\app\src\main\AndroidManifest.xml:21:25-66
+35
+36                <category android:name="android.intent.category.LAUNCHER" />
+36-->D:\safecall-java\app\src\main\AndroidManifest.xml:22:17-77
+36-->D:\safecall-java\app\src\main\AndroidManifest.xml:22:27-74
+37            </intent-filter>
+38        </activity>
+39        <activity android:name="com.safecall.CallHistoryActivity" />
+39-->D:\safecall-java\app\src\main\AndroidManifest.xml:25:9-57
+39-->D:\safecall-java\app\src\main\AndroidManifest.xml:25:19-54
+40        <activity android:name="com.safecall.ContactManagementActivity" />
+40-->D:\safecall-java\app\src\main\AndroidManifest.xml:26:9-63
+40-->D:\safecall-java\app\src\main\AndroidManifest.xml:26:19-60
+41
+42        <receiver
+42-->D:\safecall-java\app\src\main\AndroidManifest.xml:28:9-34:20
+43            android:name="com.safecall.receiver.SafeCallPhoneStateReceiver"
+43-->D:\safecall-java\app\src\main\AndroidManifest.xml:29:13-64
+44            android:exported="true" >
+44-->D:\safecall-java\app\src\main\AndroidManifest.xml:30:13-36
+45            <intent-filter>
+45-->D:\safecall-java\app\src\main\AndroidManifest.xml:31:13-33:29
+46                <action android:name="android.intent.action.PHONE_STATE" />
+46-->D:\safecall-java\app\src\main\AndroidManifest.xml:32:17-76
+46-->D:\safecall-java\app\src\main\AndroidManifest.xml:32:25-73
+47            </intent-filter>
+48        </receiver>
+49    </application>
+50
+51</manifest>
